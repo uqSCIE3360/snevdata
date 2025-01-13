@@ -1,0 +1,14 @@
+Package: snevdata
+Type: Package
+Title: A package containing various biological data 
+Version: 0.1.0
+Authors@R: person("Engelstaedter", "Jan", email = "j.engelstaedter@uq.edu.au",
+  role = c("aut", "cre"))
+Description: This package is a compilation of various datasets from
+    the School of the Environment at The University of Queensland.
+    The data is being used for the course SCIE3360,
+    "Data Science for Life and Environmental Scientists".
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
