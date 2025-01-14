@@ -12,7 +12,7 @@ marsupials <- read_excel("data_raw/Fisher2001/marsupial_population_density.xls")
 # add lifespan from different file:
 lifespan <- read_excel("data_raw/Fisher2001/full_marsupial_dataset.xlsx", sheet = 2, na = "_")
 marsupials <- left_join(marsupials, lifespan, by = c("Family", "Genus name", "Species name"))
-colnames(marsupials) <- c("Family", "Genus", "Species", "Mass", "PopDensity", "MaxLifeSpan")
+colnames(marsupials) <- c("Family", "Genus", "Species", "FemaleMass", "PopDensity", "MaxLifeSpan")
 
 save(marsupials, file = "data/marsupials.RData")
 
