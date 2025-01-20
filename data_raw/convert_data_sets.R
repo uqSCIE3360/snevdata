@@ -132,7 +132,7 @@ save(bunyas, file = "data/bunyas.Rdata")
 
 copepods <- read_csv("data_raw/Eriksen2019/IMOS_Zooplankton_Abundance_and_Biomass_copepod_data.csv") |>
   filter(Project == "NRS") |>
-  filter(!(StationName %in% c("Esperance", "PH4", "Ningaloo"))) |>
+  filter(!(StationName %in% c("Esperance", "PH4", "Ningaloo", "VBM100 - Bonney Coast"))) |>
   select(-Project, -Year_Local, -Month_Local, -Day_Local, -Time_Local24hr, -StationCode, -TripCode, -AshFreeBiomass_mgm3) |>
   select(-(CTDSST_degC:CTDSalinity_psu))
 
