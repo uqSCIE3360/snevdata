@@ -14,7 +14,7 @@ A tibble containing the following columns:
   \item{SampleTime_Local}{}
   \item{SampleDepth_m}{}
   \item{Biomass_mgm3}{}
-  \item{Species abundances}{Estimated abundances of various copepod species, as number of individuals per m3.}
+  \item{Species abundances (estimated abundances of various copepod species, as number of individuals per m3)}{}
   }
 }
 \source{
@@ -25,6 +25,8 @@ copepods
 }
 \description{
 Copepod abundance through time at several research stations across Australia.
+}
+\details{
 Data was sourced from Australia’s Integrated Marine Observing System (IMOS) – IMOS is enabled by the National Collaborative Research Infrastructure strategy (NCRIS).  It is operated by a consortium of institutions as an unincorporated joint venture, with the University of Tasmania as Lead Agent.
 }
 \keyword{datasets}
