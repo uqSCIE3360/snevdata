@@ -214,3 +214,25 @@
 #' @source Brown, A. 2019. How does moisture stress structure angiosperm communities in subtropical rainforests? Honours Thesis. The University of Queensland, Brisbane.
 #' @source Harwood, T., R. Donohue, I. Harman, T. McVicar, N. Ota, J. Perry, and K. Williams. 2016. 9s climatology for continental Australia 1976-2005: Summary variables with elevation and radiative adjustment v3. CSIRO Data Collection.
 "bunyas"
+
+
+#' Copepod abundances
+#'
+#' Copepod abundance through time at several research stations across Australia.
+#' Data was sourced from Australia’s Integrated Marine Observing System (IMOS) – IMOS is enabled by the National Collaborative Research Infrastructure strategy (NCRIS).  It is operated by a consortium of institutions as an unincorporated joint venture, with the University of Tasmania as Lead Agent.
+#'
+#' @format A tibble containing the following columns:
+#' \describe{
+#'   \item{StationName}{}
+#'   \item{Latidude}{}
+#'   \item{Longitude}{}
+#'   \item{SampleTime_UTC}{}
+#'   \item{SampleTime_Local}{}
+#'   \item{SampleDepth_m}{}
+#'   \item{Biomass_mgm3}{}
+#'   \item{Species abundances}{Estimated abundances of various copepod species, as number of individuals per m3.}
+#'   }
+#'
+#' @source Eriksen, Ruth S., Claire H. Davies, Pru Bonham, Frank E. Coman, Steven Edgar, Felicity R. McEnnulty, David McLeod, et al. “Australia’s Long-Term Plankton Observations: The Integrated Marine Observing System National Reference Station Network.” Frontiers in Marine Science 6 (2019). https://doi.org/10.3389/fmars.2019.00161.
+"copepods"
+

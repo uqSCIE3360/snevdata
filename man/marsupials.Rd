@@ -10,7 +10,7 @@ A data frame with 102 rows and 6 columns. Each row corresponds to a different sp
   \item{Family}{The name of the family that the species belongs to}
   \item{Genus}{The name of the genus that the species belongs to}
   \item{Species}{The specific epithet of the species}
-  \item{Mass}{Mean female mass, in grams}
+  \item{FemaleMass}{Mean female mass, in grams}
   \item{PopDensity}{Population density, as individuals per hectar}
   \item{MaxLifeSpan}{Maximum life-span, in years}
 }
@@ -18,7 +18,7 @@ A data frame with 102 rows and 6 columns. Each row corresponds to a different sp
 \source{
 Fisher, D.O., Owens, I.P.F. & Johnson, C.N. The ecological basis of life history variation in marsupials. Ecology 82:3531-3540 (2001)
 
-    The data are also freely avalaible on Ecological Archives E082-042-A1, at
+    The data are also freely available on Ecological Archives E082-042-A1, at
 \url{http://esapubs.org/archive/ecol/E082/042/appendix-A.htm}
 }
 \usage{
