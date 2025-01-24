@@ -237,3 +237,17 @@
 #' @source Eriksen, Ruth S., Claire H. Davies, Pru Bonham, Frank E. Coman, Steven Edgar, Felicity R. McEnnulty, David McLeod, et al. “Australia’s Long-Term Plankton Observations: The Integrated Marine Observing System National Reference Station Network.” Frontiers in Marine Science 6 (2019). https://doi.org/10.3389/fmars.2019.00161.
 "copepods"
 
+
+#' Rainforest fire and mammal diversity
+#'
+#' Camera trap data to on mammal communities in rainforest margins that are affected to varying degrees by wildfires.
+#'
+#'
+#' @format A list containing two tibbles:
+#' \describe{
+#'   \item{images}{Table of camera images taken at different sites, and with identified animals for each picture.}
+#'   \item{sites}{Table of sites, including geographical location, fire habitat category, and various other information.}
+#'   }
+#'
+#' @source Bird, R.R., Zsoldos, R.R., Jimenez Sandoval, M.V., Watson, S.J. & Smith, A.L. Wildfire in rainforest margins is associated with variation in mammal diversity and habitat use. (under review)
+"rainforestFire"

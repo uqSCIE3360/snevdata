@@ -138,4 +138,20 @@ copepods <- read_csv("data_raw/Eriksen2019/IMOS_Zooplankton_Abundance_and_Biomas
 
 save(copepods, file = "data/copepods.RData")
 
+################################################################################################
+# Bird et al. 2025
+################################################################################################
+
+# Almost-published dataset (as of Jan 2025) from Annabel Smith's lab, containing camera trapping
+# data of mammals in rainforest habitats affected by fire.
+
+rainforestFire <- list(images = read_csv("data_raw/Bird2025/Raw.Image.Data.csv"),
+                       sites = read_csv("data_raw/Bird2025/Site.Data.csv"))
+
+rainforestFire$images <- rainforestFire$images |>
+  select(!Trigger:Orientation) |>
+  select(!Old_ID, !Old_Rank, !Habitat) |>
+  rename(Taxonomic_Rank = Taxinomic_Rank)
+
+save(rainforestFire, file = "data/rainforestFire.RData", compress = "xz")
 
