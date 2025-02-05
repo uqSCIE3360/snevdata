@@ -10,14 +10,26 @@ A list containing two tibbles:
   \item{images}{Table of camera images taken at different sites, and with identified animals for each picture.}
   \item{sites}{Table of sites, including geographical location, fire habitat category, and various other information.}
   }
+
+A list containing two tibbles:
+\describe{
+  \item{images}{Table of camera images taken at different sites, and with identified animals for each picture.}
+  \item{sites}{Table of sites, including geographical location, fire habitat category, and various other information.}
+  }
 }
 \source{
+Bird, R.R., Zsoldos, R.R., Jimenez Sandoval, M.V., Watson, S.J. & Smith, A.L. Wildfire in rainforest margins is associated with variation in mammal diversity and habitat use. (under review)
+
 Bird, R.R., Zsoldos, R.R., Jimenez Sandoval, M.V., Watson, S.J. & Smith, A.L. Wildfire in rainforest margins is associated with variation in mammal diversity and habitat use. (under review)
 }
 \usage{
 rainforestFire
+
+rainforestFire
 }
 \description{
+Camera trap data to on mammal communities in rainforest margins that are affected to varying degrees by wildfires.
+
 Camera trap data to on mammal communities in rainforest margins that are affected to varying degrees by wildfires.
 }
 \keyword{datasets}

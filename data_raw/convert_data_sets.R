@@ -2,6 +2,7 @@
 library(tidyverse)
 library(readxl)
 library(ape)
+library(janitor)
 
 ################################################################################################
 # Fisher et al. 2001
@@ -155,3 +156,29 @@ rainforestFire$images <- rainforestFire$images |>
 
 save(rainforestFire, file = "data/rainforestFire.RData", compress = "xz")
 
+################################################################################################
+# Ubide et al. 2022
+################################################################################################
+
+# Dataset of published chemical compositions of ocean islands.
+
+dat <- read_excel("data_raw/Ubide2022/Ubide2022_SuppTables.xlsx",
+                        sheet = "Table S6",
+                        range = "A2:AV31503",
+                        guess_max = 31502) |>
+  clean_names() |>
+  mutate(across(si_o2_wt_percent:loi_wt_percent, as.double))
+
+refs <- read_excel("data_raw/Ubide2022/Ubide2022_SuppTables.xlsx",
+                   sheet = "Table S6",
+                   range = "A31509:A32875",
+                   col_names = "key") |>
+  slice(c(-1352, -1353)) |>
+  mutate(key = ifelse(substr(key, 1, 1) =="[", key, paste0("[NA] ", key))) |>
+  separate_wider_regex(key, pattern = c(key = "^.*?\\]", reference = "(?<=\\]).*")) |>
+  mutate(reference = str_sub(reference, 2)) |>
+  mutate(key = ifelse(key == "[NA]", NA, key))
+
+volcanoes <- list(dat = dat, references = refs)
+
+save(volcanoes, file = "data/volcanoes.RData", compress = "xz")
