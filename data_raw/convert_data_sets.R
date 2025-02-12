@@ -154,6 +154,9 @@ rainforestFire$images <- rainforestFire$images |>
   select(!Old_ID, !Old_Rank, !Habitat) |>
   rename(Taxonomic_Rank = Taxinomic_Rank)
 
+rainforestFire$sites <- rainforestFire$sites |>
+  rename(Fire_habitat_category = Fire_habitat_catergory)
+
 save(rainforestFire, file = "data/rainforestFire.RData", compress = "xz")
 
 ################################################################################################
