@@ -151,7 +151,7 @@ rainforestFire <- list(images = read_csv("data_raw/Bird2025/Raw.Image.Data.csv")
 
 rainforestFire$images <- rainforestFire$images |>
   select(!Trigger:Orientation) |>
-  select(!Old_ID, !Old_Rank, !Habitat) |>
+  select(!c(Old_ID, Old_Rank, Habitat)) |>
   rename(Taxonomic_Rank = Taxinomic_Rank)
 
 rainforestFire$sites <- rainforestFire$sites |>
